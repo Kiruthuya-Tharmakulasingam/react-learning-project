@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "../../styles/Forms.css";
 
 function StudentForm() {
-  const [formData, setFormData] = useState({
+  const defaultValues = {
     name: "",
     age: "",
     isActive: true,
-  });
+  }
+  const [formData, setFormData] = useState(defaultValues);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -19,7 +20,11 @@ function StudentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    alert("User create success")
+    
+    setFormData(defaultValues)
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <label for="name">Name</label>
