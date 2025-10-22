@@ -29,11 +29,11 @@ function StudentForm() {
     <form onSubmit={handleSubmit}>
       <label for="name">Name</label>
       <br />
-      <input type="text" id="name" name="name" onChange={handleChange} />
+      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
       <br />
       <label for="age">Age</label>
       <br />
-      <input type="number" id="age" name="age" onChange={handleChange} />
+      <input type="number" id="age" name="age" value={formData.age} onChange={handleChange} />
       <br />
       <br />
       <input type="submit" value="send" />
