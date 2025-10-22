@@ -28,7 +28,7 @@ function Header() {
         <Link to="/hooks" style={style.navLink}>
           Hooks
         </Link>
-        <Link to="/form" style={style.navLink}>
+        <Link to="/forms" style={style.navLink}>
           Form
         </Link>
       </nav>

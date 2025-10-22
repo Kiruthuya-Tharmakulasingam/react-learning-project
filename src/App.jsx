@@ -9,7 +9,7 @@ import JSX from "./pages/JSX";
 // import ReactIntro from "./pages/ReactIntro";
 import NotFound from "./pages/NotFound";
 import Hooks from "./pages/Hooks";
-import Form from "./pages/Form";
+import Form from "./pages/Forms";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/components" element={<Components />} />
           <Route path="/props" element={<Props />} />
           <Route path="/hooks" element={<Hooks />} />
-          <Route path="/form" element={<Form />} />
+          <Route path="/forms" element={<Form />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
