@@ -57,6 +57,7 @@ function RegistrationForm() {
       <label>Gender</label><br />
       <input type="radio" name="gender" value="Male" checked={formData.gender === "Male"} onChange={handleChange} /> Male
       <input type="radio" name="gender" value="Female" checked={formData.gender === "Female"} onChange={handleChange} /> Female<br />
+      
       <label>Country</label><br />
       <select name="country" value={formData.country} onChange={handleChange}>
         <option value="">Select</option>
