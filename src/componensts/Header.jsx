@@ -31,6 +31,9 @@ function Header() {
         <Link to="/forms" style={style.navLink}>
           Form
         </Link>
+        <Link to="/fetch" style={style.navLink}>
+          Fetch
+        </Link>
       </nav>
     </header>
   );
