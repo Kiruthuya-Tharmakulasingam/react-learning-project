@@ -17,7 +17,6 @@ function RegistrationForm() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-      console.log("Checked:", checked);
 
     if (type === "checkbox") {
       setFormData((prev) => {
