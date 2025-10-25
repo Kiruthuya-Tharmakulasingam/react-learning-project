@@ -20,9 +20,7 @@ const registrationSchema = yup.object().shape({
     .min(6, "Password must be at least 6 characters"),
   gender: yup.string().required("Please select gender"),
   country: yup.string().required("Please select your country"),
-  skills: yup
-    .array()
-    .min(1, "Select at least one skill"),
+  skills: yup.array().min(1, "Select at least one skill"),
   bio: yup
     .string()
     .required("Bio is required")

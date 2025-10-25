@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 .form-container {
-  background-color: #DBE9F4;
+  background-color: #dbe9f4;
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ button {
   width: 100%;
   padding: 10px;
   margin-top: 20px;
-  background-color: #4A90E2;
+  background-color: #4a90e2;
   color: white;
   border: none;
   border-radius: 5px;
@@ -53,7 +53,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #357AB7;
+  background-color: #357ab7;
 }
 
 .error {
@@ -62,4 +62,3 @@ button:hover {
   margin-top: -8px;
   margin-bottom: 10px;
 }
-
