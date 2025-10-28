@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Hooks from "./pages/Hooks";
 import Form from "./pages/Forms";
 import Fetch from "./pages/Fetch";
+import Axios from "./pages/Axios";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/forms" element={<Form />} />
           <Route path="/fetch" element={<Fetch />} />
+          <Route path="/axios" element={<Axios />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

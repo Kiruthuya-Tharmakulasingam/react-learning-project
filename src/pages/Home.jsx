@@ -10,6 +10,7 @@ function Home() {
       <HomeCard url="hooks" />
       <HomeCard url="forms" />
       <HomeCard url="fetch" />
+      <HomeCard url="axios" />
     </>
   );
 }
