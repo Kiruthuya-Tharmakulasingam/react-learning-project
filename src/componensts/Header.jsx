@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
+    <>
     <header style={style.container}>
       <div style={style.logo}>
         <Link to="/" style={style.linkTitle}>
@@ -39,6 +40,7 @@ function Header() {
         </Link>
       </nav>
     </header>
+    </>
   );
 }
 

@@ -3,35 +3,38 @@ import React, { useState } from "react";
 
 function PostData() {
   const defaultValues = {
-      name: "",
-      email: "",
-      isActive: true,
-    };
+    name: "",
+    email: "",
+    isActive: true,
+  };
 
-    const [formData, setFormData] = useState(defaultValues);
+  const [formData, setFormData] = useState(defaultValues);
 
-    const handleChange = (e) => {
-      const { name, value, type, checked } = e.target;
-      setFormData((prev) => ({
-        ...prev,
-        [name]: type === "checkbox" ? checked : value,
-      }));
-    };
-    const handleSubmit = async(e) => {
-       e.preventDefault();
-     try {
-      await axios.post("https://express-mongo-connection-sigma.vercel.app/api/users",formData);
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(
+        "https://express-mongo-connection-sigma.vercel.app/api/users",
+        formData
+      );
       alert("Student created successfully");
       console.log(formData);
       setFormData(defaultValues);
-     } catch (error) {
+    } catch (error) {
       console.log(error);
       alert("Failed to create user");
-     }
-    };
-    return (
-<>
-       <div className="content-container">
+    }
+  };
+  return (
+    <>
+      <div className="content-container">
         <h1>PostData</h1>
         <div className="content-body">Api call using axios</div>
       </div>
@@ -60,7 +63,7 @@ function PostData() {
           <button type="submit">Send</button>
         </form>
       </div>
-      </>
-    );
+    </>
+  );
 }
-export default PostData
+export default PostData;
