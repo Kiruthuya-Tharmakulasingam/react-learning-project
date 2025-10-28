@@ -32,7 +32,7 @@ function PostData() {
     return (
 <>
        <div className="content-container">
-        <h1>FetchData</h1>
+        <h1>PostData</h1>
         <div className="content-body">Api call using axios</div>
       </div>
       <div>
